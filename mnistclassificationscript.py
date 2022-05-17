@@ -2,7 +2,7 @@ import tensorflow as tf
 from tensorflow import keras
 import matplotlib.pyplot as plt
 import numpy as np
-
+#
 (training_dataset, training_d_labels), (testing_dataset, testing_d_labels) = keras.datasets.mnist.load_data()
 
 len(training_dataset)
@@ -30,8 +30,8 @@ classification_model.compile(
     metrics=['accuracy']
 )
 
-# The model is trained in 15 epochs
-classification_model.fit(flattened_training_d, training_d_labels, epochs=15)
+# The model is trained in 9 epochs
+classification_model.fit(flattened_training_d, training_d_labels, epochs=9)
 
 classification_model.evaluate(flattened_testing_d, testing_d_labels)
 
