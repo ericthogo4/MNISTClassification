@@ -30,7 +30,7 @@ classification_model.compile(
     metrics=['accuracy']
 )
 
-# The model is trained in 5 epochs
+# The model is trained in 15 epochs
 classification_model.fit(flattened_training_d, training_d_labels, epochs=15)
 
 classification_model.evaluate(flattened_testing_d, testing_d_labels)
