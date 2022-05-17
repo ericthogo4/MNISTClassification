@@ -31,7 +31,7 @@ classification_model.compile(
 )
 
 # The model is trained in 5 epochs
-classification_model.fit(flattened_training_d, training_d_labels, epochs=10)
+classification_model.fit(flattened_training_d, training_d_labels, epochs=15)
 
 classification_model.evaluate(flattened_testing_d, testing_d_labels)
 
